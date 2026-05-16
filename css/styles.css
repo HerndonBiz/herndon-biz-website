@@ -377,6 +377,7 @@ p { font-size: 1rem; color: var(--gray-text); }
   padding-top: 2rem;
   border-top: 1px solid rgba(255,255,255,0.1);
   flex-wrap: wrap;
+  justify-content: center;
 }
 .hero__stat-num {
   font-size: 1.75rem;
@@ -481,9 +482,10 @@ p { font-size: 1rem; color: var(--gray-text); }
 .services-intro { padding: 5rem 0 3rem; }
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 420px));
   gap: 1.75rem;
   padding: 0 0 5rem;
+  justify-content: center;
 }
 .pricing-card {
   background: var(--white);
