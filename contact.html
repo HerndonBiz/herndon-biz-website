@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Herndon Business Services</title>
+  <meta name="description" content="Ready to talk? Reach out to Mitchell Herndon at Herndon Business Services. I'll get back to you within 24 hours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NV76R47NQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5NV76R47NQ');
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION START -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="Herndon Business Services home">
+          <span class="nav__logo-main">Herndon Business Services</span>
+          <span class="nav__logo-sub">Charlotte &amp; Gastonia, NC</span>
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="portfolio.html">Work</a></li>
+          <li><a href="performance.html">Tracking</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary nav__cta">Let's Talk</a>
+        <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" role="list">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="portfolio.html">Work</a>
+      <a href="performance.html">Tracking</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="btn btn--navy">Let's Talk</a>
+    </div>
+  </nav>
+  <!-- NAVIGATION END -->
+
+  <!-- CONTACT HERO START -->
+  <header class="contact-hero" aria-labelledby="page-title">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Contact</span>
+      </nav>
+      <span class="section-label">Get in Touch</span>
+      <h1 id="page-title">Let's Talk.</h1>
+      <p class="lead">Tell me about your business. I'll listen, ask the right questions, and tell you honestly whether I think I can help — and what that would look like.</p>
+    </div>
+  </header>
+  <!-- CONTACT HERO END -->
+
+  <!-- CONTACT BODY SECTION START -->
+  <section class="contact-body" aria-labelledby="contact-form-heading">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- CONTACT FORM START -->
+        <div>
+          <h2 class="section-title" id="contact-form-heading" style="margin-bottom:1.75rem">Send a message</h2>
+
+          <!-- SUCCESS MESSAGE START -->
+          <div id="form-success" class="form-success" role="alert" aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <h3>Message received.</h3>
+            <p>Thanks for reaching out. I'll get back to you within 24 hours.</p>
+          </div>
+          <!-- SUCCESS MESSAGE END -->
+
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/mrejnypb"
+            method="POST"
+            class="contact-form"
+            novalidate
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name <span aria-hidden="true" style="color:#dc2626">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="business">Business Name</label>
+                <input type="text" id="business" name="business" placeholder="Smith's Hardware" autocomplete="organization" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true" style="color:#dc2626">*</span></label>
+                <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(704) 555-0100" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Which plan are you interested in?</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>Select a plan (optional)</option>
+                <option value="standard">Standard — $80/month</option>
+                <option value="plus">Plus — $150/month</option>
+                <option value="premium">Premium — $300/month</option>
+                <option value="unsure">Not sure yet — let's talk</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell me about your business <span aria-hidden="true" style="color:#dc2626">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="What do you do, who are your customers, what are you hoping a website will do for you?"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--navy" style="width:100%;justify-content:center;padding:1rem">
+              Send Message
+            </button>
+
+            <p style="font-size:.8rem;color:var(--gray-text);margin-top:.75rem;text-align:center">
+              I respond to every message within 24 hours — usually much faster.
+            </p>
+          </form>
+        </div>
+        <!-- CONTACT FORM END -->
+
+        <!-- CONTACT INFO SIDEBAR START -->
+        <div class="contact-info">
+
+          <div class="contact-info__card">
+            <h3>Contact Info</h3>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact-info__label">Email</div>
+                <a href="mailto:herndonbizservices@gmail.com" class="contact-info__value">herndonbizservices@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-info__label">Location</div>
+                <span class="contact-info__value">Charlotte, NC (South End)</span>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <div class="contact-info__label">Response Time</div>
+                <span class="contact-info__value">Within 24 hours</span>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <div class="contact-info__label">Serving</div>
+                <span class="contact-info__value">Charlotte &amp; Gastonia, NC</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-promise">
+            <p><strong>What happens after you reach out:</strong> I read every message personally. If we seem like a good fit, I'll reply to schedule a 30-minute discovery call. No pressure, no pitch — just a conversation about your business.</p>
+          </div>
+
+          <div style="margin-top:1.5rem;background:var(--navy);border-radius:var(--radius);padding:1.75rem">
+            <h4 style="color:var(--gold);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem">Current Availability</h4>
+            <div style="display:flex;align-items:center;gap:.75rem">
+              <span style="width:10px;height:10px;background:#22c55e;border-radius:50%;flex-shrink:0;box-shadow:0 0 0 3px rgba(34,197,94,.2)"></span>
+              <p style="color:rgba(255,255,255,.85);font-size:.9rem;margin:0">Accepting new clients in Charlotte and Gastonia.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- CONTACT INFO SIDEBAR END -->
+
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT BODY SECTION END -->
+
+  <!-- FOOTER START -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo-main">Herndon Business Services</div>
+          <div class="footer__logo-sub">Charlotte &amp; Gastonia, NC</div>
+          <p class="footer__tagline">Custom websites and digital strategy for local businesses that deserve to be found.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="portfolio.html">Work</a></li>
+            <li><a href="performance.html">Tracking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:herndonbizservices@gmail.com">herndonbizservices@gmail.com</a></li>
+            <li><a href="contact.html">Send a message</a></li>
+            <li style="color:rgba(255,255,255,0.35);font-size:.85rem;padding-top:.25rem;">Charlotte, NC (South End)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Herndon Business Services. All rights reserved.</p>
+        <p>Built with care by <a href="about.html">Mitchell Herndon</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
