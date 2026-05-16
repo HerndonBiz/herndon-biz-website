@@ -482,10 +482,11 @@ p { font-size: 1rem; color: var(--gray-text); }
 .services-intro { padding: 5rem 0 3rem; }
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 420px));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.75rem;
   padding: 0 0 5rem;
-  justify-content: center;
+  max-width: 880px;
+  margin: 0 auto;
 }
 .pricing-card {
   background: var(--white);
