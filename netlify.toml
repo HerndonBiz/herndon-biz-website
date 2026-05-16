@@ -1,0 +1,72 @@
+# Netlify configuration for herndonbizservices.com
+
+[build]
+  publish = "."
+
+# Force www → non-www (canonical domain consolidation for SEO)
+[[redirects]]
+  from = "https://www.herndonbizservices.com/*"
+  to   = "https://herndonbizservices.com/:splat"
+  status = 301
+  force  = true
+
+# Pretty URLs — /services → /services.html (optional but cleaner)
+[[redirects]]
+  from = "/services"
+  to   = "/services.html"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to   = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to   = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio"
+  to   = "/portfolio.html"
+  status = 301
+
+[[redirects]]
+  from = "/how-it-works"
+  to   = "/how-it-works.html"
+  status = 301
+
+[[redirects]]
+  from = "/performance"
+  to   = "/performance.html"
+  status = 301
+
+# Security & performance headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
+
+# Cache static assets aggressively
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/favicon.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

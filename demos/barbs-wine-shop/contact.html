@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Visit Barb's Wine Shop — 1245 South Blvd, South End Charlotte. Hours, directions, parking, and how to reach us." />
+  <title>Visit Us — Barb's Wine Shop</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Barb's Wine Shop</a>
+      <ul class="nav-links">
+        <li><a href="shop.html">What We Carry</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html" class="active">Visit Us</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://instagram.com/barbswineshop" target="_blank" rel="noopener" class="nav-instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <!-- HOURS PILL NAV START -->
+        <div class="hours-pill">
+          <span class="dot"></span>
+          <span class="pill-text">Open Until 7pm</span>
+        </div>
+        <!-- HOURS PILL NAV END -->
+        <button class="nav-hamburger" id="hamburgerBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="shop.html">What We Carry</a>
+    <a href="about.html">Our Story</a>
+    <a href="contact.html">Visit Us</a>
+    <!-- HOURS SECTION START -->
+    <div class="mobile-nav-hours">
+      <strong>Hours</strong>
+      Mon – Sat &nbsp;10am – 7pm<br>
+      Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12pm – 5pm
+    </div>
+    <!-- HOURS SECTION END -->
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero-centered">
+    <div>
+      <p class="section-eyebrow">South End, Charlotte NC</p>
+      <h1 class="hero-short__headline" style="font-family: var(--font-display); font-style: italic; font-size: clamp(32px, 4vw, 52px); color: var(--color-primary);">Come Find Us</h1>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO SECTION START -->
+  <!-- ===================== CONTACT MAIN ===================== -->
+  <section class="contact-main">
+    <div class="contact-main__inner">
+
+      <!-- Column 1: Getting Here -->
+      <div class="contact-col">
+        <h2 class="contact-col__heading">Getting Here</h2>
+        <p class="contact-address">1245 South Blvd<br>Charlotte, NC 28203</p>
+        <p class="contact-neighborhood">We're in South End, two blocks from the East/West light rail station at Carson Blvd. Look for the dark green awning.</p>
+        <a href="https://maps.google.com/?q=1245+South+Blvd+Charlotte+NC+28203" target="_blank" rel="noopener" class="directions-link" style="display:inline-block; margin-bottom: 16px;">Get Directions &rarr;</a>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.8!2d-80.8631!3d35.2165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541f8e8a5b7d97%3A0x0!2s1245+South+Blvd%2C+Charlotte%2C+NC+28203!5e0!3m2!1sen!2sus!4v1700000000000"
+            width="100%"
+            height="240"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Barb's Wine Shop location map">
+          </iframe>
+        </div>
+        <p class="contact-parking">Parking: Free street parking on South Blvd and Camden Rd. The lot behind the building has 2-hour free parking during shop hours.</p>
+      </div>
+
+      <!-- Column 2: Hours & Contact -->
+      <div class="contact-col">
+        <h2 class="contact-col__heading">Hours &amp; Contact</h2>
+        <!-- HOURS SECTION START -->
+        <table class="contact-hours-table">
+          <tbody>
+            <tr><td>Monday – Saturday</td><td>10am – 7pm</td></tr>
+            <tr><td>Sunday</td><td>12pm – 5pm</td></tr>
+            <tr><td>Holidays</td><td>See Instagram</td></tr>
+          </tbody>
+        </table>
+        <!-- HOURS SECTION END -->
+        <div class="contact-detail">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+17045550182">(704) 555-0182</a>
+        </div>
+        <div class="contact-detail">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:hello@barbswineshop.com">hello@barbswineshop.com</a>
+        </div>
+        <div class="contact-detail">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <a href="https://instagram.com/barbswineshop" target="_blank" rel="noopener">@barbswineshop</a>
+        </div>
+        <p class="contact-best-way">Best way to reach us: Instagram DM for quick questions, email for special orders and events. We respond within one business day.</p>
+        <div class="contact-social" style="margin-top: 16px;">
+          <a href="https://instagram.com/barbswineshop" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com/barbswineshop" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- NEWSLETTER SECTION START -->
+      <!-- Column 3: Stay Connected -->
+      <div class="contact-col">
+        <h2 class="contact-col__heading" style="font-family: var(--font-display);">Stay in the Loop</h2>
+        <p class="contact-col__sub">New arrivals, seasonal picks, and events — no more than twice a month. We don't share your information with anyone.</p>
+        <form
+          action="https://formspree.io/f/YOUR_NEWSLETTER_ID"
+          method="POST"
+          class="newsletter-form"
+          aria-label="Newsletter signup">
+          <input type="text" name="name" placeholder="Your name" autocomplete="given-name" required />
+          <input type="email" name="email" placeholder="Your email address" autocomplete="email" required />
+          <button type="submit" class="btn-primary" style="width: 100%;">Sign Up</button>
+        </form>
+      </div>
+      <!-- NEWSLETTER SECTION END -->
+
+    </div>
+  </section>
+  <!-- CONTACT INFO SECTION END -->
+
+  <!-- ===================== CONTACT FORM ===================== -->
+  <section class="contact-form-section">
+    <div class="contact-form-section__inner">
+      <h2 class="contact-form-section__heading">Send Us a Message</h2>
+      <p style="font-size:15px; color: var(--color-mid); margin-bottom: 28px;">For special orders, wholesale inquiries, event bookings, or anything else — we're happy to hear from you.</p>
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        class="contact-form"
+        aria-label="Contact form">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your full name" autocomplete="name" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="your@email.com" autocomplete="email" required />
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="cf-subject">What can we help you with?</label>
+          <select id="cf-subject" name="subject" required>
+            <option value="" disabled selected>Select a topic…</option>
+            <option value="General Question">General Question</option>
+            <option value="Special Order">Special Order</option>
+            <option value="Event or Collaboration">Event or Collaboration</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-logo">Barb's Wine Shop</p>
+        <p class="footer-tagline">A carefully curated selection for curious palates.</p>
+        <p class="footer-desc">An independent wine and spirits shop in South End, Charlotte. Family owned since 2011. We carry what we love, and we'll always tell you why.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-col">
+          <p class="footer-col__label">Navigate</p>
+          <a href="shop.html">What We Carry</a>
+          <a href="about.html">Our Story</a>
+          <a href="contact.html">Visit Us</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col__label">Visit</p>
+          <p>1245 South Blvd<br>Charlotte, NC 28203</p>
+          <p>Mon–Sat 10am–7pm</p>
+          <p>Sunday 12pm–5pm</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/barbswineshop" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com/barbswineshop" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>&copy; 2025 Barb's Wine Shop. All rights reserved.</span>
+      <span>Site by Herndon Business Services</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

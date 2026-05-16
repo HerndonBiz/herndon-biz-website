@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Joe's Barbecue</title>
+  <meta name="description" content="Joe's Barbecue full menu — smoked brisket, ribs, pulled pork, sides, desserts, and drinks. Open daily 11am–7pm in Austin, TX." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────── -->
+  <nav class="nav nav--always-solid" id="main-nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Joe's <span>BBQ</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="tel:+15125550182" class="nav__cta">Call to Order</a>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <button class="nav__overlay-close" id="nav-overlay-close" aria-label="Close menu">&times;</button>
+    <ul class="nav__overlay-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="tel:+15125550182" class="btn btn--primary" style="margin-top: 16px;">Call to Order</a>
+  </div>
+
+  <!-- ─── HERO ──────────────────────────────────────── -->
+  <section class="hero hero--short">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">What's Smoking Today</p>
+      <h1 class="hero__title">Menu</h1>
+    </div>
+  </section>
+
+  <!-- Mobile pill nav -->
+  <nav class="menu-pill-nav" aria-label="Menu categories">
+    <a href="#starters">Starters</a>
+    <a href="#mains">Mains</a>
+    <a href="#plates">Pit Plates</a>
+    <a href="#sides">Sides</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#drinks">Drinks</a>
+  </nav>
+
+  <!-- ─── MENU BODY ─────────────────────────────────── -->
+  <div class="menu-body">
+
+    <!-- Desktop sidebar -->
+    <aside class="menu-sidebar" aria-label="Menu category navigation">
+      <div class="menu-sidebar__title">Categories</div>
+      <ul class="menu-sidebar__nav">
+        <li><a href="#starters">Starters</a></li>
+        <li><a href="#mains">Mains</a></li>
+        <li><a href="#plates">Pit Plates</a></li>
+        <li><a href="#sides">Sides</a></li>
+        <li><a href="#desserts">Desserts</a></li>
+        <li><a href="#drinks">Drinks</a></li>
+      </ul>
+    </aside>
+
+    <!-- MENU SECTION START -->
+    <main class="menu-content">
+      <div class="menu-categories">
+
+        <!-- STARTERS -->
+        <section class="menu-category" id="starters">
+          <h2 class="menu-category__name">Starters</h2>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Smoked Chicken Wings
+                <span class="badge">GF</span>
+                <span class="badge">S</span>
+              </span>
+              <span class="menu-item__price">$14</span>
+            </div>
+            <p class="menu-item__desc">A full pound of wings smoked over mesquite, tossed in your choice of Joe's dry rub, honey-chipotle glaze, or straight-up naked. Ranch or blue cheese on the side.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Burnt End Bites
+                <span class="badge">GF</span>
+              </span>
+              <span class="menu-item__price">$13</span>
+            </div>
+            <p class="menu-item__desc">Caramelized brisket burnt ends tossed in a sweet Kansas City-style glaze. The most fought-over item on the menu for a reason.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Loaded BBQ Nachos
+                <span class="badge">S</span>
+              </span>
+              <span class="menu-item__price">$12</span>
+            </div>
+            <p class="menu-item__desc">Thick-cut tortilla chips, pulled pork, smoked queso, pickled jalapeños, pico de gallo, and sour cream. Sharing optional, encouraged.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Smoked Jalapeño Poppers
+                <span class="badge">GF</span>
+                <span class="badge">S</span>
+              </span>
+              <span class="menu-item__price">$10</span>
+            </div>
+            <p class="menu-item__desc">Whole jalapeños stuffed with cream cheese and brisket scraps, wrapped in bacon, smoked until the bacon crisps. Six to an order.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Hush Puppies
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$7</span>
+            </div>
+            <p class="menu-item__desc">Golden cornmeal fritters with a kick of green onion and cheddar inside. Served with honey butter.</p>
+          </div>
+
+        </section>
+
+        <!-- MAINS -->
+        <section class="menu-category" id="mains">
+          <h2 class="menu-category__name">Mains</h2>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Brisket Sandwich
+                <span class="badge">GF option</span>
+              </span>
+              <span class="menu-item__price">$16</span>
+            </div>
+            <p class="menu-item__desc">Half-pound of sliced brisket on a toasted brioche bun with house pickles, white onion, and a slather of our original sauce. Simple. Perfect.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">Pulled Pork Sandwich</span>
+              <span class="menu-item__price">$14</span>
+            </div>
+            <p class="menu-item__desc">Slow-smoked pork shoulder pulled by hand, piled on Texas toast with house slaw and pickled jalapeños.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Smoked Turkey Sandwich
+                <span class="badge">GF option</span>
+              </span>
+              <span class="menu-item__price">$15</span>
+            </div>
+            <p class="menu-item__desc">Thick-sliced smoked turkey breast on sourdough with avocado, roasted poblano, and jalapeño aioli. The lighter option that doesn't feel like one.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                The Smokehouse Burger
+                <span class="badge">S</span>
+              </span>
+              <span class="menu-item__price">$17</span>
+            </div>
+            <p class="menu-item__desc">Double smash patties, smoked cheddar, burnt end chili, house pickles, crispy onions, and spicy Joe's sauce. A burger that knows what it is.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                BBQ Chicken Plate
+                <span class="badge">GF</span>
+              </span>
+              <span class="menu-item__price">$18</span>
+            </div>
+            <p class="menu-item__desc">Half chicken — breast and thigh — smoked over pecan wood for three hours and finished with our vinegar-based drizzle. Comes with two sides.</p>
+          </div>
+
+        </section>
+
+        <!-- PIT PLATES -->
+        <section class="menu-category" id="plates">
+          <h2 class="menu-category__name">Pit Plates</h2>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                The Pitmaster Plate
+                <span class="badge">GF</span>
+              </span>
+              <span class="menu-item__price">$28</span>
+            </div>
+            <p class="menu-item__desc">Three meats, two sides, pickles, onions, and bread. Mix and match brisket, pulled pork, ribs, turkey, or chicken. The full picture.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Half Rack Plate
+                <span class="badge">GF</span>
+              </span>
+              <span class="menu-item__price">$22</span>
+            </div>
+            <p class="menu-item__desc">Half rack of baby back ribs — honey-chipotle glazed and smoked with pecan wood. Two sides included. Upgrade to full rack for $10.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Full Rack Baby Back Ribs
+                <span class="badge">GF</span>
+              </span>
+              <span class="menu-item__price">$32</span>
+            </div>
+            <p class="menu-item__desc">The full commitment. Rubbed overnight, smoked with pecan wood, glazed with honey-chipotle. Two sides included. Napkins not optional.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Smoked Brisket Plate
+                <span class="badge">GF</span>
+              </span>
+              <span class="menu-item__price">$24</span>
+            </div>
+            <p class="menu-item__desc">Half-pound of sliced brisket plus a scoop of burnt ends, two sides of your choice, pickles, and onion. Joe's sauce on the side.</p>
+          </div>
+
+        </section>
+
+        <!-- SIDES -->
+        <section class="menu-category" id="sides">
+          <h2 class="menu-category__name">Sides</h2>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Smoked Mac &amp; Cheese
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$6</span>
+            </div>
+            <p class="menu-item__desc">Cavatappi pasta in a three-cheese sauce — cheddar, gruyère, smoked gouda — baked until the top blisters. Our best-selling side by a mile.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Collard Greens
+                <span class="badge">GF</span>
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$5</span>
+            </div>
+            <p class="menu-item__desc">Slow-braised with garlic, apple cider vinegar, and just enough pepper flake. The vegetable that converts people who say they don't eat vegetables.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Joe's Baked Beans
+                <span class="badge">GF</span>
+              </span>
+              <span class="menu-item__price">$5</span>
+            </div>
+            <p class="menu-item__desc">Pinto beans slow-cooked in brisket drippings with brown sugar, mustard, and bits of smoked sausage. The recipe hasn't changed since 2009.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                House Coleslaw
+                <span class="badge">GF</span>
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$4</span>
+            </div>
+            <p class="menu-item__desc">Crisp cabbage and carrot with a tangy apple cider vinegar dressing. The cool, crunchy thing your plate needs next to all that smoke.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Elote Street Corn
+                <span class="badge">GF</span>
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$5</span>
+            </div>
+            <p class="menu-item__desc">Grilled corn, cotija cheese, chili powder, lime, and crema. Cut off the cob for easy eating, or left on if you want the full picture.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Potato Salad
+                <span class="badge">GF</span>
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$5</span>
+            </div>
+            <p class="menu-item__desc">Classic Texas-style: yellow potatoes, yellow mustard, hard-boiled egg, dill pickle relish, and just enough mayo to hold it together.</p>
+          </div>
+
+        </section>
+
+        <!-- DESSERTS -->
+        <section class="menu-category" id="desserts">
+          <h2 class="menu-category__name">Desserts</h2>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Banana Pudding
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$7</span>
+            </div>
+            <p class="menu-item__desc">Real vanilla pudding, fresh banana, Nilla wafers, and whipped cream. Made from scratch every morning. They run out by 5 on weekends — fair warning.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Peach Cobbler
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$8</span>
+            </div>
+            <p class="menu-item__desc">Texas Hill Country peaches, buttery biscuit topping, a pinch of cardamom, and a scoop of vanilla bean ice cream. Seasonal when peaches are good; frozen peaches the rest of the year — still worth it.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Sweet Potato Pie
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$7</span>
+            </div>
+            <p class="menu-item__desc">Joe's mother's recipe. Flaky butter crust, spiced sweet potato filling, whipped cream on top. One slice per person, no exceptions.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Churro Bites
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$6</span>
+            </div>
+            <p class="menu-item__desc">Fried dough rolled in cinnamon sugar, served with a smoked chocolate dipping sauce. Six pieces per order. Pairs unexpectedly well with everything else on this menu.</p>
+          </div>
+
+        </section>
+
+        <!-- DRINKS -->
+        <section class="menu-category" id="drinks">
+          <h2 class="menu-category__name">Drinks</h2>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Sweet Tea
+                <span class="badge">GF</span>
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$3</span>
+            </div>
+            <p class="menu-item__desc">Brewed fresh twice a day. Refills always free. If you leave without having one, you've made a mistake.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Fresh-Squeezed Lemonade
+                <span class="badge">GF</span>
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$4</span>
+            </div>
+            <p class="menu-item__desc">Tart, barely sweet, made daily. Ask about our weekly flavors — strawberry basil, jalapeño mint, or honey lavender when they're going.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Draft Beer
+                <span class="badge">GF</span>
+              </span>
+              <span class="menu-item__price">$6</span>
+            </div>
+            <p class="menu-item__desc">Four Texas craft taps rotating weekly. Always a Lone Star in the cooler if that's your move. Ask the counter what's pouring today.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Root Beer Float
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$5</span>
+            </div>
+            <p class="menu-item__desc">Dublin Dr Pepper or Boylan root beer over two scoops of Blue Bell vanilla. The dessert that doubles as a drink.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <span class="menu-item__name">
+                Bottled Water / Soft Drinks
+                <span class="badge">GF</span>
+                <span class="badge">V</span>
+              </span>
+              <span class="menu-item__price">$2</span>
+            </div>
+            <p class="menu-item__desc">Coke, Diet Coke, Sprite, and water. Simple and cold.</p>
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+    <!-- MENU SECTION END -->
+
+  </div>
+
+  <!-- ─── FOOTER ────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">Joe's <span>BBQ</span></div>
+        <p class="footer__tagline">Slow-smoked meats, homemade sides, and a whole lot of soul. Open daily 11am–7pm on Pitmaster Drive in Austin, TX.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">&#9737;</a>
+          <a href="#" aria-label="Yelp">y</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigate</div>
+        <ul class="footer__nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Find Us</div>
+        <p class="footer__contact-item">742 Pitmaster Drive<br>Austin, TX 78701</p>
+        <p class="footer__contact-item"><a href="tel:+15125550182">(512) 555-0182</a></p>
+        <p class="footer__contact-item"><a href="mailto:hello@joesbarbecue.com">hello@joesbarbecue.com</a></p>
+        <p class="footer__contact-item" style="margin-top:8px;">Mon–Sun &nbsp;|&nbsp; 11am–7pm</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; 2025 Joe's Barbecue. All rights reserved.</span>
+      <span class="footer__hbs">Site by Herndon Business Services</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

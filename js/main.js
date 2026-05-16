@@ -88,19 +88,18 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.value-card, .pricing-card, .process-step, .portfolio-card, .perf-card').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(24px)';
-  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-  observer.observe(el);
-});
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!prefersReducedMotion) {
+  document.querySelectorAll('.value-card, .pricing-card, .process-step, .portfolio-card, .perf-card').forEach(el => {
+    el.classList.add('fade-in');
+    observer.observe(el);
+  });
+}
 
-document.addEventListener('animationend', () => {}, { once: true });
-document.querySelectorAll('.value-card, .pricing-card, .process-step, .portfolio-card, .perf-card').forEach(el => {
-  el.addEventListener('transitionend', () => {}, { once: true });
+// --- Dynamic copyright year ---
+const year = new Date().getFullYear();
+document.querySelectorAll('.footer__bottom p').forEach(p => {
+  if (p.textContent.includes('©')) {
+    p.innerHTML = p.innerHTML.replace(/© \d{4}/, `© ${year}`);
+  }
 });
-
-// Add visible class styles via JS
-const style = document.createElement('style');
-style.textContent = '.value-card.visible, .pricing-card.visible, .process-step.visible, .portfolio-card.visible, .perf-card.visible { opacity: 1 !important; transform: translateY(0) !important; }';
-document.head.appendChild(style);

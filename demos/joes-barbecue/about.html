@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story — Joe's Barbecue</title>
+  <meta name="description" content="The story behind Joe's Barbecue — how a driveway smoker became Austin's favorite neighborhood BBQ joint." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────── -->
+  <nav class="nav nav--always-solid" id="main-nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Joe's <span>BBQ</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="tel:+15125550182" class="nav__cta">Call to Order</a>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <button class="nav__overlay-close" id="nav-overlay-close" aria-label="Close menu">&times;</button>
+    <ul class="nav__overlay-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="tel:+15125550182" class="btn btn--primary" style="margin-top: 16px;">Call to Order</a>
+  </div>
+
+  <!-- ─── HERO ──────────────────────────────────────── -->
+  <section class="hero hero--short">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Joe's Barbecue — Austin, TX</p>
+      <h1 class="hero__title">Our Story</h1>
+    </div>
+  </section>
+
+  <!-- ─── ORIGIN STORY ─────────────────────────────── -->
+  <section class="origin">
+    <div class="origin__inner">
+      <div class="origin__img">
+        <div class="img-placeholder" style="height:100%; min-height:480px; font-size:64px; flex-direction:column; gap:14px;">
+          👨‍🍳<span style="font-size:11px;letter-spacing:2px;opacity:.45;">JOE MARTINEZ</span>
+        </div>
+      </div>
+      <div>
+        <h2 class="origin__who">Who We Are</h2>
+        <div class="origin__text">
+          <p>Joe Martinez grew up watching his grandfather, Ernesto, smoke brisket on an old oil-drum pit every Sunday in San Antonio. There was no recipe card — just feel, instinct, and the understanding that the fire does the work if you set it up right. Joe learned by standing next to him for twenty years.</p>
+          <p>When Joe moved to Austin in 2007, he brought Ernesto's methods with him. He smoked for neighbors, then for friends of neighbors, then for people who had heard about it from friends of neighbors. By 2009, demand had outgrown his driveway and his patience for saying "next week." Joe's Barbecue opened on Pitmaster Drive that October with a two-ton offset smoker, six picnic tables, and a handwritten menu on a chalkboard.</p>
+          <p>Sixteen years later, the chalkboard is still up. The picnic tables got replaced twice. The smoker got a younger sibling. Everything else — the wood, the rub, the patience, the people — stayed exactly the same. Joe still shows up before 5am to load the pit. He doesn't trust anyone else to start the fire.</p>
+          <p>We're not a franchise. We're not a concept. We're a family that figured out how to feed a neighborhood, and we've been doing it ever since.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VALUES STRIP ─────────────────────────────── -->
+  <section class="values">
+    <div class="values__grid">
+      <div class="value-item">
+        <div class="value-item__num">01</div>
+        <div class="value-item__headline">The Wood Matters</div>
+        <p class="value-item__copy">We use Texas post oak, pecan, and mesquite — never liquid smoke, never shortcuts. The wood is half the flavor.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-item__num">02</div>
+        <div class="value-item__headline">Community First</div>
+        <p class="value-item__copy">We sponsor the little league team. We feed the fire station. We host Sunday Funday because the neighborhood deserves a place to just be together.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-item__num">03</div>
+        <div class="value-item__headline">Never Rush It</div>
+        <p class="value-item__copy">Brisket takes 14 hours. Ribs take 6. Pulled pork takes 10. We sell out when we sell out. We don't make more just to have more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TEAM ──────────────────────────────────────── -->
+  <!-- TEAM SECTION START -->
+  <section class="team">
+    <div class="team__inner">
+      <h2 class="team__title">The People Behind the Food</h2>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-card__photo">
+            <div class="team-photo-placeholder">👨‍🍳</div>
+          </div>
+          <div class="team-card__name">Joe Martinez</div>
+          <div class="team-card__role">Pitmaster &amp; Owner</div>
+          <p class="team-card__bio">Up before 5am every day to load the pit. His grandfather taught him everything he knows, and he hasn't stopped trying to get it right.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card__photo">
+            <div class="team-photo-placeholder">👩‍🍳</div>
+          </div>
+          <div class="team-card__name">Rosa Martinez</div>
+          <div class="team-card__role">Head of Kitchen &amp; Co-Owner</div>
+          <p class="team-card__bio">Rosa runs the sides, desserts, and everything that isn't fire. The banana pudding, the mac and cheese, the baked beans — that's all her.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card__photo">
+            <div class="team-photo-placeholder">🧑‍🍳</div>
+          </div>
+          <div class="team-card__name">Marcus Webb</div>
+          <div class="team-card__role">Pit Manager</div>
+          <p class="team-card__bio">Marcus has been tending the secondary smoker since 2014. He's the reason your ribs are consistent on a Tuesday in January and a Sunday in July.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card__photo">
+            <div class="team-photo-placeholder">👩‍🦱</div>
+          </div>
+          <div class="team-card__name">Tanya Reyes</div>
+          <div class="team-card__role">Front of House Lead</div>
+          <p class="team-card__bio">Tanya has probably served you before. She remembers your order and your name, even if it takes her a minute on the first visit.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card__photo">
+            <div class="team-photo-placeholder">🧑</div>
+          </div>
+          <div class="team-card__name">Diego Martinez</div>
+          <div class="team-card__role">Events &amp; Sunday Funday</div>
+          <p class="team-card__bio">Joe's son. He took over Sunday Funday in 2021 and turned it into the neighborhood institution it is today. He also runs trivia and takes it too seriously.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card__photo">
+            <div class="team-photo-placeholder">👨</div>
+          </div>
+          <div class="team-card__name">Calvin Brooks</div>
+          <div class="team-card__role">Smoker &amp; Prep</div>
+          <p class="team-card__bio">Calvin joined us straight out of culinary school four years ago and has been learning the old-school way ever since. He's going to run his own pit someday.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- TEAM SECTION END -->
+
+  <!-- ─── FOOTER ────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">Joe's <span>BBQ</span></div>
+        <p class="footer__tagline">Slow-smoked meats, homemade sides, and a whole lot of soul. Open daily 11am–7pm on Pitmaster Drive in Austin, TX.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">&#9737;</a>
+          <a href="#" aria-label="Yelp">y</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigate</div>
+        <ul class="footer__nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Find Us</div>
+        <p class="footer__contact-item">742 Pitmaster Drive<br>Austin, TX 78701</p>
+        <p class="footer__contact-item"><a href="tel:+15125550182">(512) 555-0182</a></p>
+        <p class="footer__contact-item"><a href="mailto:hello@joesbarbecue.com">hello@joesbarbecue.com</a></p>
+        <p class="footer__contact-item" style="margin-top:8px;">Mon–Sun &nbsp;|&nbsp; 11am–7pm</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; 2025 Joe's Barbecue. All rights reserved.</span>
+      <span class="footer__hbs">Site by Herndon Business Services</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

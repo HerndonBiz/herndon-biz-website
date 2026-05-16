@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe's Barbecue — Real Smoke. Real Food. Real Good.</title>
+  <meta name="description" content="Joe's Barbecue — slow-smoked meats, homemade sides, and good times. Open daily 11am–7pm. Sunday Funday Cookout &amp; Trivia every week." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────── -->
+  <nav class="nav nav--transparent" id="main-nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Joe's <span>BBQ</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="tel:+15125550182" class="nav__cta">Call to Order</a>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav__overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <button class="nav__overlay-close" id="nav-overlay-close" aria-label="Close menu">&times;</button>
+    <ul class="nav__overlay-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="tel:+15125550182" class="btn btn--primary" style="margin-top: 16px;">Call to Order</a>
+  </div>
+
+  <!-- ─── HERO ──────────────────────────────────────── -->
+  <section class="hero hero--full">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Austin's Neighborhood Barbecue</p>
+      <h1 class="hero__title">Joe's<br><span>Barbecue</span></h1>
+      <p class="hero__sub">Real smoke. Real food. Real good.</p>
+      <div class="hero__ctas">
+        <a href="menu.html" class="btn btn--primary">View Menu</a>
+        <a href="contact.html" class="btn btn--outline">Find Us</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">&#8964;</div>
+  </section>
+
+  <!-- ─── THE HOOK ──────────────────────────────────── -->
+  <section class="hook">
+    <div class="hook__grid">
+      <div class="hook__item">
+        <span class="hook__icon">🔥</span>
+        <h2 class="hook__headline">Smoked Low & Slow</h2>
+        <p class="hook__copy">Every brisket and rack of ribs spends 12–16 hours in the smoker. We don't rush it. Neither should you.</p>
+      </div>
+      <div class="hook__item">
+        <span class="hook__icon">🏡</span>
+        <h2 class="hook__headline">Family Run Since 2009</h2>
+        <p class="hook__copy">Joe started this with a $400 smoker in his driveway. The pit's bigger now, but it's still the same family behind the counter.</p>
+      </div>
+      <div class="hook__item">
+        <span class="hook__icon">🎉</span>
+        <h2 class="hook__headline">Sunday Funday Every Week</h2>
+        <p class="hook__copy">Every Sunday: live-fire cookout, trivia, cold drinks, and the kind of afternoon you'll still be talking about Monday morning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURED DISHES ──────────────────────────── -->
+  <section class="featured">
+    <div class="featured__header">
+      <h2 class="featured__title">What We're Known For</h2>
+      <a href="menu.html" class="featured__link">Full Menu &rarr;</a>
+    </div>
+    <!-- FEATURED DISHES SECTION START -->
+    <div class="dishes-grid">
+      <div class="dish-card">
+        <div class="dish-card__img">
+          <div class="dish-card__img-inner img-placeholder" style="font-size:52px; flex-direction:column; gap:12px;">
+            🥩<span style="font-size:11px;letter-spacing:2px;opacity:.5;">BRISKET</span>
+          </div>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__name">Smoked Brisket Plate</div>
+          <div class="dish-card__desc">Half-pound of oak-smoked brisket, burnt ends, two sides, and Joe's house sauce on the side.</div>
+          <div class="dish-card__price">$24</div>
+        </div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-card__img">
+          <div class="dish-card__img-inner img-placeholder" style="font-size:52px; flex-direction:column; gap:12px;">
+            🍖<span style="font-size:11px;letter-spacing:2px;opacity:.5;">RIBS</span>
+          </div>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__name">Baby Back Ribs</div>
+          <div class="dish-card__desc">Full rack, rubbed overnight, smoked with pecan wood, glazed with our honey-chipotle finish. Napkins included.</div>
+          <div class="dish-card__price">$32</div>
+        </div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-card__img">
+          <div class="dish-card__img-inner img-placeholder" style="font-size:52px; flex-direction:column; gap:12px;">
+            🥪<span style="font-size:11px;letter-spacing:2px;opacity:.5;">SANDWICH</span>
+          </div>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__name">Pulled Pork Sandwich</div>
+          <div class="dish-card__desc">Texas toast piled high with pulled pork shoulder, house slaw, and pickled jalapeños. A weekday staple.</div>
+          <div class="dish-card__price">$14</div>
+        </div>
+      </div>
+    </div>
+    <!-- FEATURED DISHES SECTION END -->
+  </section>
+
+  <!-- ─── HOURS & LOCATION ─────────────────────────── -->
+  <section class="hours-loc">
+    <div class="hours-loc__inner">
+      <div>
+        <p class="hours-loc__label">When We're Here</p>
+        <h2 class="hours-loc__title">Hours</h2>
+        <!-- HOURS SECTION START -->
+        <div class="hours-grid">
+          <div class="hours-row">
+            <span class="hours-row__day">Monday – Sunday</span>
+            <span class="hours-row__time">11:00 AM – 7:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-row__day">Sunday Funday</span>
+            <span class="hours-row__time">11:00 AM – Close</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-row__day">Holidays</span>
+            <span class="hours-row__time">Check our Facebook</span>
+          </div>
+        </div>
+        <!-- HOURS SECTION END -->
+      </div>
+      <div>
+        <p class="hours-loc__label">Where to Find Us</p>
+        <h2 class="hours-loc__title">Location</h2>
+        <p class="loc__address">
+          742 Pitmaster Drive<br>
+          Austin, TX 78701<br>
+          (512) 555-0182
+        </p>
+        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="loc__map-link">Get Directions &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EVENTS ────────────────────────────────────── -->
+  <section class="events">
+    <div class="events__inner">
+      <p class="section-eyebrow">Every Week</p>
+      <h2 class="section-title">Come Hang.<br>Stay Awhile.</h2>
+      <!-- EVENTS SECTION START -->
+      <div class="events-list">
+        <div class="event-card">
+          <div class="event-card__day">Every Sunday</div>
+          <div class="event-card__name">Sunday Funday Cookout</div>
+          <div class="event-card__desc">Pull up a lawn chair. Every Sunday we fire up the big pit out back, throw on whole chickens, whole hogs, and whatever looked good at the market that week. Live music when we can swing it, cold drinks always, and good people guaranteed. Starts at 11 and runs until the smoke does.</div>
+          <span class="event-card__badge">Free to Attend</span>
+        </div>
+        <div class="event-card event-card--gold">
+          <div class="event-card__day">Every Sunday</div>
+          <div class="event-card__name">BBQ Trivia Night</div>
+          <div class="event-card__desc">Think you know barbecue? Think you know Austin? Think you know random stuff? Good — we've got a trivia night that'll humble you and feed you all at once. Teams of up to six, prizes for first through third, and a running tab of smoked wings for the table.</div>
+          <span class="event-card__badge">Sign Up at the Counter</span>
+        </div>
+      </div>
+      <!-- EVENTS SECTION END -->
+    </div>
+  </section>
+
+  <!-- ─── ABOUT PREVIEW ────────────────────────────── -->
+  <section class="about-preview">
+    <div class="about-preview__inner">
+      <div class="about-preview__img">
+        <div class="img-placeholder" style="aspect-ratio:4/5; font-size:52px; flex-direction:column; gap:12px;">
+          👨‍🍳<span style="font-size:11px;letter-spacing:2px;opacity:.5;">JOE &amp; CREW</span>
+        </div>
+      </div>
+      <div class="about-preview__body">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="section-title">Started on a<br>Driveway.</h2>
+        <p class="about-preview__copy">
+          Joe Martinez grew up watching his grandfather smoke brisket every Sunday in San Antonio. When he moved to Austin in 2007, he brought the recipes with him — and a stubborn conviction that good barbecue doesn't need a fancy sign out front. Just a good fire, good wood, and time.
+        </p>
+        <p class="about-preview__copy">
+          Two years after that first driveway cookout, Joe's Barbecue opened its doors on Pitmaster Drive. Sixteen years later, nothing much has changed except the size of the smoker.
+        </p>
+        <a href="about.html" class="about-preview__more">Our Full Story &rarr;</a>
+        <blockquote class="about-preview__quote">
+          "My grandfather always said if you have to rush it, you're doing it wrong. I've been doing it his way ever since."
+          <span class="about-preview__attr">— Joe Martinez, Pitmaster &amp; Owner</span>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">Joe's <span>BBQ</span></div>
+        <p class="footer__tagline">Slow-smoked meats, homemade sides, and a whole lot of soul. Open daily 11am–7pm on Pitmaster Drive in Austin, TX.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">&#9737;</a>
+          <a href="#" aria-label="Yelp">y</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigate</div>
+        <ul class="footer__nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Find Us</div>
+        <p class="footer__contact-item">
+          742 Pitmaster Drive<br>Austin, TX 78701
+        </p>
+        <p class="footer__contact-item">
+          <a href="tel:+15125550182">(512) 555-0182</a>
+        </p>
+        <p class="footer__contact-item">
+          <a href="mailto:hello@joesbarbecue.com">hello@joesbarbecue.com</a>
+        </p>
+        <p class="footer__contact-item" style="margin-top:8px;">Mon–Sun &nbsp;|&nbsp; 11am–7pm</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; 2025 Joe's Barbecue. All rights reserved.</span>
+      <span class="footer__hbs">Site by Herndon Business Services</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

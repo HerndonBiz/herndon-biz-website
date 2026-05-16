@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bobby's HVAC | Charlotte's Trusted Heating & Cooling Experts</title>
+  <meta name="description" content="Bobby's HVAC — licensed, insured HVAC installation, repair, and maintenance serving Charlotte, NC and surrounding areas. Same-day service available. Call (704) 555-0182." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Bobby's <span>HVAC</span></a>
+
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="tel:+17045550182" class="nav-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        (704) 555-0182
+      </a>
+      <a href="contact.html" class="btn-primary">Get Free Quote</a>
+    </div>
+
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile overlay -->
+<div class="nav-overlay" role="dialog" aria-label="Navigation menu">
+  <button class="nav-overlay-close" aria-label="Close menu">&times;</button>
+  <a href="tel:+17045550182" class="nav-overlay-phone">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+    (704) 555-0182
+  </a>
+  <ul class="nav-overlay-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="hero-badge">LICENSED &amp; INSURED &middot; CHARLOTTE, NC</span>
+      <h1 class="hero-headline">Bobby's HVAC<br>Heating &amp; Cooling</h1>
+      <p class="hero-sub">20+ Years Keeping Charlotte Comfortable. Same-Day Service Available.</p>
+      <div class="hero-ctas">
+        <a href="contact.html" class="btn-primary">Get Free Quote</a>
+        <a href="tel:+17045550182" class="btn-secondary">Call Now: (704) 555-0182</a>
+      </div>
+      <div class="hero-trust">
+        <span class="hero-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+          Licensed &amp; Insured
+        </span>
+        <span class="hero-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+          Free Estimates
+        </span>
+        <span class="hero-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+          Satisfaction Guaranteed
+        </span>
+      </div>
+    </div>
+
+    <!-- Floating quote card (desktop only) -->
+    <div class="hero-card">
+      <h3>Request a Free Quote</h3>
+      <p>We'll respond within 2 hours during business hours.</p>
+      <form action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" method="POST">
+        <div class="form-group">
+          <label for="hero-name">Full Name</label>
+          <input type="text" id="hero-name" name="name" placeholder="John Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="hero-phone">Phone Number</label>
+          <input type="tel" id="hero-phone" name="phone" placeholder="(704) 555-0000" required />
+        </div>
+        <div class="form-group">
+          <label for="hero-service">Service Needed</label>
+          <select id="hero-service" name="service">
+            <option value="">Select a service…</option>
+            <option value="hvac-install">HVAC Installation / Replacement</option>
+            <option value="hvac-repair">HVAC Repair &amp; Maintenance</option>
+            <option value="air-quality">Indoor Air Quality</option>
+            <option value="commercial">Commercial HVAC</option>
+            <option value="emergency">Emergency Service</option>
+            <option value="other">Other / Not Sure</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="hero-message">Brief Description</label>
+          <textarea id="hero-message" name="message" rows="3" placeholder="Tell us what's going on…"></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%;text-align:center;">Send My Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES PREVIEW ===== -->
+<!-- SERVICES LIST SECTION START -->
+<section class="services-preview">
+  <div class="container">
+    <p class="section-label">What We Do</p>
+    <h2 class="section-heading">Full-Service HVAC for Charlotte Homes &amp; Businesses</h2>
+    <br>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">❄️</div>
+        <h3>HVAC Installation &amp; Replacement</h3>
+        <p>New systems sized right for your home. We install all major brands and handle the full project start to finish.</p>
+        <a href="services.html#hvac-install">Learn More &rarr;</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Repair &amp; Maintenance</h3>
+        <p>Fast diagnosis, honest repairs. Annual tune-ups that extend your system's life and keep energy bills down.</p>
+        <a href="services.html#hvac-repair">Learn More &rarr;</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌬️</div>
+        <h3>Indoor Air Quality</h3>
+        <p>Filters, UV purifiers, whole-home humidifiers, and duct cleaning for cleaner, healthier air inside.</p>
+        <a href="services.html#air-quality">Learn More &rarr;</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏢</div>
+        <h3>Commercial HVAC</h3>
+        <p>Light commercial systems, tenant buildouts, and scheduled maintenance contracts for Charlotte businesses.</p>
+        <a href="services.html#commercial">Learn More &rarr;</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Emergency Service</h3>
+        <p>No AC in August? No heat in January? We answer the phone 24/7 and dispatch the same day.</p>
+        <a href="services.html#emergency">Learn More &rarr;</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌡️</div>
+        <h3>Smart Thermostats</h3>
+        <p>Nest, Ecobee, and Honeywell installations that save you money and put comfort control in your pocket.</p>
+        <a href="services.html">Learn More &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SERVICES LIST SECTION END -->
+
+<!-- ===== WHY CHOOSE US ===== -->
+<div class="why-us">
+  <div class="why-us-inner">
+    <div class="why-col">
+      <h2>WHY CHARLOTTE HOMEOWNERS TRUST US</h2>
+      <p>Bobby's HVAC was founded on one principle: do the job right and treat people fairly. Bobby Hernandez started the company in his truck with a single set of tools and a reputation for showing up when others didn't. Twenty years later, the company has grown into one of Charlotte's most-referred HVAC contractors — but the work ethic hasn't changed.</p>
+      <p>We don't upsell systems you don't need. We'll tell you honestly whether your unit needs a repair or a replacement, and we'll back our recommendation with real data — efficiency ratings, age, refrigerant cost, repair history. No pressure, no gimmicks.</p>
+      <p>Every technician on our crew is NATE-certified, background-checked, and trained to clean up after themselves. We treat your home like ours. Most of our new business comes from referrals, and we intend to keep it that way.</p>
+    </div>
+
+    <!-- STATS SECTION START -->
+    <div class="stats-col">
+      <div class="stat-block">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">Years Serving Charlotte</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">3,200+</div>
+        <div class="stat-label">Jobs Completed</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">4.9 ★</div>
+        <div class="stat-label">Google Review Average</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Emergency Availability</div>
+      </div>
+    </div>
+    <!-- STATS SECTION END -->
+  </div>
+</div>
+
+<!-- ===== TRUST BADGES ===== -->
+<!-- TRUST BADGES SECTION START -->
+<div class="trust-badges">
+  <div class="trust-badges-inner">
+    <div class="badge-card">
+      <span class="badge-icon">🏅</span>
+      <div>
+        <strong>BBB Accredited</strong>
+        <span class="badge-sub">A+ Rating</span>
+      </div>
+    </div>
+    <div class="badge-card">
+      <span class="badge-icon">📋</span>
+      <div>
+        <strong>NC Licensed Contractor</strong>
+        <span class="badge-sub">License #34721-HVAC</span>
+      </div>
+    </div>
+    <div class="badge-card">
+      <span class="badge-icon">🛡️</span>
+      <div>
+        <strong>Fully Insured</strong>
+        <span class="badge-sub">$2M General Liability</span>
+      </div>
+    </div>
+    <div class="badge-card">
+      <span class="badge-icon">❄️</span>
+      <div>
+        <strong>Carrier Authorized Dealer</strong>
+        <span class="badge-sub">Factory-Certified</span>
+      </div>
+    </div>
+    <div class="badge-card">
+      <span class="badge-icon">⭐</span>
+      <div>
+        <strong>Google Reviews</strong>
+        <span class="badge-sub"><span class="stars">★★★★★</span> 4.9 (312 reviews)</span>
+      </div>
+    </div>
+    <div class="badge-card">
+      <span class="badge-icon">🔬</span>
+      <div>
+        <strong>NATE-Certified Techs</strong>
+        <span class="badge-sub">North American Technician Excellence</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- TRUST BADGES SECTION END -->
+
+<!-- ===== RECENT WORK ===== -->
+<!-- RECENT WORK SECTION START -->
+<section class="recent-work">
+  <div class="container">
+    <h2>RECENT WORK</h2>
+    <div class="work-grid">
+      <div class="work-item">
+        <div class="work-placeholder">❄️</div>
+        <div class="work-overlay"><span>AC Replacement<br>South End</span></div>
+      </div>
+      <div class="work-item">
+        <div class="work-placeholder">🔧</div>
+        <div class="work-overlay"><span>Furnace Install<br>Ballantyne</span></div>
+      </div>
+      <div class="work-item">
+        <div class="work-placeholder">🌬️</div>
+        <div class="work-overlay"><span>Duct Cleaning<br>Myers Park</span></div>
+      </div>
+    </div>
+    <p style="text-align:center;color:rgba(255,255,255,0.45);font-size:13px;margin-top:16px;">
+      Add job photos to /images/ — see customization checklist
+    </p>
+  </div>
+</section>
+<!-- RECENT WORK SECTION END -->
+
+<!-- ===== REVIEWS ===== -->
+<!-- REVIEWS SECTION START -->
+<section class="reviews">
+  <div class="container">
+    <h2>WHAT OUR CUSTOMERS SAY</h2>
+    <p class="reviews-sub">Real reviews from Charlotte homeowners on Google</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"AC died on a Saturday in July. Bobby's had a tech at my house by noon and the unit running by 3pm. Price was fair and he explained everything. This is the only HVAC company I'll ever call."</p>
+        <div class="review-footer">
+          <div>
+            <div class="reviewer-name">Marcus T.</div>
+            <div class="reviewer-area">Dilworth</div>
+          </div>
+          <span class="review-source">Google</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Bobby gave me an honest assessment when two other companies told me I needed a new unit. Turns out I just needed a repair that cost $320. That kind of integrity is rare. They've earned a customer for life."</p>
+        <div class="review-footer">
+          <div>
+            <div class="reviewer-name">Priya M.</div>
+            <div class="reviewer-area">Matthews</div>
+          </div>
+          <span class="review-source">Google</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Replaced our entire HVAC system. The crew was on time, professional, and cleaned up perfectly. New system is quieter, the house heats evenly now, and our electric bill dropped $80 a month. Highly recommend."</p>
+        <div class="review-footer">
+          <div>
+            <div class="reviewer-name">Kevin &amp; Dana R.</div>
+            <div class="reviewer-area">Huntersville</div>
+          </div>
+          <span class="review-source">Google</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- REVIEWS SECTION END -->
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>READY TO GET STARTED?</h2>
+    <p>Contact us today for a free estimate. Most jobs quoted same day.</p>
+    <div class="cta-btn-group">
+      <a href="tel:+17045550182" class="btn-white">Call Now: (704) 555-0182</a>
+      <a href="contact.html" class="btn-white">Request Online Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="footer-logo">Bobby's <span>HVAC</span></div>
+      <p class="footer-tagline">Charlotte's trusted heating and cooling experts since 2005. Licensed, insured, and standing behind every job we do.</p>
+      <p class="footer-license">NC Contractor License #34721-HVAC</p>
+    </div>
+    <div class="footer-col">
+      <h3>Navigation</h3>
+      <ul class="footer-nav">
+        <li><a href="services.html#hvac-install">HVAC Installation</a></li>
+        <li><a href="services.html#hvac-repair">Repair &amp; Maintenance</a></li>
+        <li><a href="services.html#air-quality">Indoor Air Quality</a></li>
+        <li><a href="services.html#commercial">Commercial HVAC</a></li>
+        <li><a href="services.html#emergency">Emergency Service</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Free Quote</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT INFO SECTION START -->
+    <div class="footer-col footer-contact">
+      <h3>Contact Us</h3>
+      <a href="tel:+17045550182" class="footer-phone">(704) 555-0182</a>
+      <p>📍 4820 South Blvd, Charlotte, NC 28217</p>
+      <p>✉️ <a href="mailto:info@bobbyshvac.com">info@bobbyshvac.com</a></p>
+      <p style="margin-top:8px;font-size:13px;color:rgba(255,255,255,0.55);">Service Area:</p>
+      <div class="footer-area-list">
+        <span>Charlotte</span>
+        <span>Ballantyne</span>
+        <span>Matthews</span>
+        <span>Huntersville</span>
+        <span>Concord</span>
+        <span>Mooresville</span>
+        <span>Gastonia</span>
+        <span>Pineville</span>
+      </div>
+    </div>
+    <!-- CONTACT INFO SECTION END -->
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; 2025 Bobby's HVAC. All rights reserved.</span>
+    <a href="#">Privacy Policy</a>
+  </div>
+</footer>
+
+<!-- Mobile bottom call bar -->
+<a href="tel:+17045550182" class="mobile-call-bar">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+  TAP TO CALL &mdash; (704) 555-0182
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
